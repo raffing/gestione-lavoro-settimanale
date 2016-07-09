@@ -33,8 +33,8 @@ $it_giorni = array(
                     <?php
                     if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['password'])) {
 
-                        if ($_POST['username'] == 'pamar' &&
-                            $_POST['password'] == 'paki1965') {
+                        if ($_POST['username'] == 'admin' &&
+                            $_POST['password'] == 'admin') {
                             $_SESSION['valid'] = true;
                             $_SESSION['timeout'] = time();
                             $_SESSION['username'] = 'tutorialspoint';
