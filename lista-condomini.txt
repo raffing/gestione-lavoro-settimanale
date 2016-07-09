@@ -1,0 +1,112 @@
+>1:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>2:
+structa 45; 60
+petrucci; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>3:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>4:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>5:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>6:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
+>7:
+ufficio gas; 60
+piazza pitta 1; 30
+piazza pitta 2; 30
+washington 17;45
+washington 27;30
+washington 37;30
+londra;30
+san giacomo;1
+paolillo;40
+Battaglia;30
+Ferrante 17; 30
+Pastore 16; 30
+Pastore 36; 30
+Veneto; 30
+Ferrante 11; 20
