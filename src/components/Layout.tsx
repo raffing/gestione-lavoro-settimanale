@@ -88,7 +88,7 @@ export default function Layout() {
       </aside>
 
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-0 left-0 right-0 bg-white border-b shadow-sm z-20">
+      <header className="lg:hidden fixed top-0 left-0 right-0 bg-white border-b shadow-sm z-30">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center">
@@ -98,7 +98,7 @@ export default function Layout() {
           </div>
           <button
             onClick={() => setIsMobileMenuOpen(true)}
-            className="p-2 hover:bg-gray-100 rounded-lg"
+            className="p-2 hover:bg-gray-100 rounded-lg min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Apri menu"
           >
             <Menu className="w-6 h-6" />
@@ -108,7 +108,7 @@ export default function Layout() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50">
+        <div className="lg:hidden fixed inset-0 z-40">
           <div
             className="absolute inset-0 bg-black/50"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -118,7 +118,7 @@ export default function Layout() {
               <span className="font-bold text-gray-800">Menu</span>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 hover:bg-gray-100 rounded-lg"
+                className="p-2 hover:bg-gray-100 rounded-lg min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Chiudi menu"
               >
                 <X className="w-6 h-6" />
@@ -176,14 +176,14 @@ export default function Layout() {
       )}
 
       {/* Mobile Bottom Navigation */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-10">
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-20">
         <div className="flex justify-around">
           {filteredNavItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `flex flex-col items-center py-2 px-3 min-w-[60px] ${
+                `flex flex-col items-center py-2 px-3 min-w-[60px] min-h-[56px] justify-center ${
                   isActive ? 'text-teal-600' : 'text-gray-500'
                 }`
               }
@@ -196,7 +196,7 @@ export default function Layout() {
       </nav>
 
       {/* Main Content */}
-      <main className="lg:ml-64 pt-14 lg:pt-0 pb-20 lg:pb-0">
+      <main className="lg:ml-64 pt-16 lg:pt-0 pb-20 lg:pb-0">
         <Outlet />
       </main>
     </div>

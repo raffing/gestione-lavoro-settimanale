@@ -60,12 +60,12 @@ export default function WorkersPage() {
   return (
     <div className="min-h-screen bg-gray-100 pb-20">
       {/* Header */}
-      <div className="bg-white shadow-sm sticky top-0 z-10 px-4 py-4">
+      <div className="bg-white shadow-sm lg:sticky lg:top-0 z-10 px-4 py-4">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-bold text-gray-800">Gestione Operai</h1>
           <button
             onClick={() => openModal()}
-            className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
+            className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors min-h-[44px]"
           >
             <Plus className="w-5 h-5" />
             <span className="hidden sm:inline">Aggiungi</span>
@@ -159,14 +159,14 @@ export default function WorkersPage() {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center">
-          <div className="bg-white w-full sm:max-w-lg sm:rounded-xl max-h-[90vh] overflow-y-auto rounded-t-xl">
-            <div className="sticky top-0 bg-white border-b px-4 py-3 flex items-center justify-between">
+          <div className="bg-white w-full sm:max-w-lg sm:rounded-xl h-full sm:h-auto sm:max-h-[90vh] overflow-y-auto rounded-t-xl sm:rounded-t-xl">
+            <div className="sticky top-0 bg-white border-b px-4 py-3 flex items-center justify-between z-10">
               <h2 className="text-lg font-semibold text-gray-800">
                 {editingId ? 'Modifica Operaio' : 'Nuovo Operaio'}
               </h2>
               <button
                 onClick={closeModal}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Chiudi"
               >
                 <X className="w-5 h-5" />
