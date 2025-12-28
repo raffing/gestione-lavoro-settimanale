@@ -2,6 +2,19 @@
 
 Una moderna web app React per la gestione del lavoro settimanale di un'impresa di pulizie.
 
+## 📱 Ottimizzata per Mobile
+
+L'app è completamente responsive e ottimizzata per l'uso su smartphone:
+- **Layout Mobile-First**: Interfaccia ottimizzata per schermi piccoli (da 375px)
+- **Touch-Friendly**: Tutti i controlli rispettano le linee guida per touch (min 44×44px)
+- **PWA Ready**: Installabile come app nativa su iOS e Android
+- **Modalità Verticale**: Perfetta per l'uso con una mano
+- **Bottom Navigation**: Navigazione principale accessibile con il pollice
+
+### Installazione come PWA
+- **iOS**: Safari → Condividi → Aggiungi a Home
+- **Android**: Chrome → Menu → Installa app
+
 ## Funzionalità
 
 ### Per Amministratori
@@ -22,6 +35,7 @@ Una moderna web app React per la gestione del lavoro settimanale di un'impresa d
 - **Tailwind CSS** per lo styling responsive
 - **React Router** per la navigazione
 - **LocalStorage** per la persistenza dei dati
+- **PWA Manifest** per installazione nativa
 
 ## Installazione
 
