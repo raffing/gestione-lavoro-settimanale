@@ -93,11 +93,11 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Day Selector */}
-      <div className="bg-white shadow-sm sticky top-0 z-10">
+      <div className="bg-white shadow-sm lg:sticky lg:top-0 z-10">
         <div className="flex items-center justify-between px-4 py-2 border-b">
           <button
             onClick={() => setWeekOffset((w) => w - 1)}
-            className="p-2 hover:bg-gray-100 rounded-lg"
+            className="p-2 hover:bg-gray-100 rounded-lg min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Settimana precedente"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -107,13 +107,13 @@ export default function DashboardPage() {
           </span>
           <button
             onClick={() => setWeekOffset((w) => w + 1)}
-            className="p-2 hover:bg-gray-100 rounded-lg"
+            className="p-2 hover:bg-gray-100 rounded-lg min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Settimana successiva"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
-        <div className="flex overflow-x-auto py-2 px-2 gap-1">
+        <div className="flex overflow-x-auto py-2 px-2 gap-2 scrollbar-hide">
           {([1, 2, 3, 4, 5, 6, 7] as DayOfWeek[]).map((day) => {
             const isSelected = day === selectedDay;
             const isToday = day === getCurrentDayOfWeek() && weekOffset === 0;
@@ -121,7 +121,7 @@ export default function DashboardPage() {
               <button
                 key={day}
                 onClick={() => setSelectedDay(day)}
-                className={`flex-1 min-w-[60px] py-3 px-2 rounded-xl text-center transition-colors ${
+                className={`flex-1 min-w-[56px] py-3 px-2 rounded-xl text-center transition-colors ${
                   isSelected
                     ? 'bg-teal-600 text-white'
                     : isToday
