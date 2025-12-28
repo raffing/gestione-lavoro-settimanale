@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Legacy files (PHP)
-nbproject/
+legacy/
