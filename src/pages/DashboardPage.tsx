@@ -121,7 +121,7 @@ export default function DashboardPage() {
               <button
                 key={day}
                 onClick={() => setSelectedDay(day)}
-                className={`flex-1 min-w-[64px] py-3 px-2 rounded-xl text-center transition-colors ${
+                className={`flex-1 min-w-[56px] py-3 px-2 rounded-xl text-center transition-colors ${
                   isSelected
                     ? 'bg-teal-600 text-white'
                     : isToday

@@ -247,7 +247,7 @@ export default function AssignmentsPage() {
                       onClick={() =>
                         setFormData((prev) => ({ ...prev, dayOfWeek: day, buildingId: '' }))
                       }
-                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors min-h-[44px] min-w-[52px] ${
+                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors min-h-[44px] min-w-[56px] ${
                         formData.dayOfWeek === day
                           ? 'bg-teal-600 text-white'
                           : 'bg-gray-100 text-gray-600 hover:bg-gray-200'

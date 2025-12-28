@@ -107,6 +107,7 @@ export default function Layout() {
       </header>
 
       {/* Mobile Menu Overlay */}
+      {/* Z-index hierarchy: Mobile header (z-30) < Menu overlay (z-40) < Modals (z-50) */}
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-40">
           <div
